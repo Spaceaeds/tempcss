@@ -936,71 +936,60 @@ li {
 .miniFormHolder {
     background: var(--f9-chat-mini-form-background-color);
     margin: 0 20px 85px 0;
-    border: 1px solid rgba(0,0,0,0.06);
-    border-radius: 14px;
-    padding: 12px;
-    font-family: var(--f9-chat-font-family-form), serif;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    border: 1px solid var(--f9-chat-title-background-color);
+    font-family: var(--f9-chat-font-family-form), serif
 }
 
 .miniFormHeader {
     color: var(--f9-chat-title-color);
-    background: transparent;
+    background: var(--f9-chat-title-background-color);
     font-size: var(--f9-chat-font-size-title);
-    font-family: var(--f9-chat-font-family-title), serif;
-    padding: 6px 0 12px 0;
+    font-family: var(--f9-chat-font-family-title), serif
 }
 
 .miniForm {
     font-family: var(--f9-chat-font-family-form), serif;
     font-size: var(--f9-chat-font-size-form);
-    color: var(--f9-chat-mini-form-text-color);
-    display: block;
+    color: var(--f9-chat-mini-form-text-color)
 }
-
-.miniForm span { display: block; margin-bottom: 12px; }
 
 .miniFormLabel {
-    color: var(--f9-chat-mini-form-label-color);
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
+    color: var(--f9-chat-mini-form-label-color)
 }
 
-.miniFormInput,
-.miniFormInputArea {
-    border-radius: 10px;
+.miniFormInput {
+    border-radius: 12px;
     border: 1px solid var(--f9-chat-mini-form-text-input-border-color);
-    padding: 10px 12px;
-    background: var(--f9-chat-mini-form-text-input-background-color);
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 412px; /* preserve server inline width behaviour */
-    transition: border-color 150ms ease, box-shadow 150ms ease;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.miniFormInputArea { min-height: 96px; resize: vertical; }
-
-.miniFormInput:focus, .miniFormInputArea:focus {
-    border-color: var(--f9-chat-title-background-color);
-    box-shadow: 0 6px 18px rgba(5,70,124,0.12);
-    outline: none;
+.miniFormInputArea {
+    border-radius: 12px;
+    border: 1px solid var(--f9-chat-mini-form-text-input-border-color);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .miniFormSubmit {
-    border-radius: 10px;
-    margin-top: 6px;
-    color: var(--f9-chat-button-text-color);
-    background: var(--f9-chat-button-background-color);
+    border-radius: 12px;
+    margin-top: 5px;
+    color: var(--f9-chat-mini-form-submit-color);
+    background: var(--f9-chat-mini-form-submit-background-color);
     font-family: var(--f9-chat-font-family-form), serif;
-    font-size: var(--f9-chat-font-size-form);
-    padding: 10px 16px;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
+    font-size: var(--f9-chat-font-size-form)
 }
 .miniFormSubmit:hover {
-    filter: brightness(0.95);
+    border-radius: 12px;
+    margin-top: 5px;
+    color: var(--f9-chat-mini-form-submit-color);
+    background: var(--f9-chat-mini-form-submit-background-color);
+    font-family: var(--f9-chat-font-family-form), serif;
+    font-size: var(--f9-chat-font-size-form)
 }
 
 .nudge-wrapper {
