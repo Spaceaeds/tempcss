@@ -46,13 +46,13 @@
     --f9-chat-avatar-border-radius: 50;
     --f9-chat-font-family: "Poppins-Regular";
     --f9-chat-font-size: "16px";
-    --f9-chat-font-family-chat: "Averta-ExtraBold";
+    --f9-chat-font-family-chat: "Poppins-Regular";
     --f9-chat-font-size-chat: "16px";
     --f9-chat-font-family-form: "Poppins-Regular";
     --f9-chat-font-size-form: "16px";
     --f9-chat-font-family-form-input: "Poppins-Regular";
     --f9-chat-font-size-form-input: "16px";
-    --f9-chat-font-family-title: "Averta-ExtraBold";
+    --f9-chat-font-family-title: "Poppins-Regular";
     --f9-chat-font-size-title: "16px";
     --f9-chat-font-family-menu: "Poppins-Regular";
     --f9-chat-font-size-menu: "16px";
@@ -60,7 +60,7 @@
     --f9-chat-font-size-template: "16px"
 }
 
-@font-face {
+/* @font-face {
     font-family: Averta-ExtraBold;
     src: url("./asset/fonts/averta-extrabold-webfont.woff") format("woff")
 }
@@ -68,7 +68,7 @@
 @font-face {
     font-family: Averta-Regular;
     src: url("./asset/fonts/averta-regular-webfont.woff") format("woff")
-}
+} */
 
 @font-face {
     font-family: Poppins-Regular;
