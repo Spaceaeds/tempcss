@@ -44,7 +44,7 @@
     --f9-chat-avatar-border-color: #dadada;
     --f9-chat-avatar-border-width: 1px;
     --f9-chat-avatar-border-radius: 50;
-    /* --f9-chat-font-family: "Averta-Regular";
+    --f9-chat-font-family: "Averta-Regular";
     --f9-chat-font-size: "14px";
     --f9-chat-font-family-chat: "Averta-ExtraBold";
     --f9-chat-font-size-chat: "14px";
@@ -57,7 +57,7 @@
     --f9-chat-font-family-menu: "Averta-Regular";
     --f9-chat-font-size-menu: "16px";
     --f9-chat-font-family-template: "sans-serif";
-    --f9-chat-font-size-template: "16px" */
+    --f9-chat-font-size-template: "16px"
 }
 
 @font-face {
@@ -1217,3 +1217,113 @@ li {
 .react-datepicker__year-read-view--down-arrow {
     display: none
 }
+
+/* ===== Additive chat UI styles (safe, non-destructive) ===== */
+/* These rules use the existing --f9-* variables and do not add or change any variable declarations. */
+
+/* Layout: limit conversation width and add a subtle panel shadow */
+.rcw-conversation-container {
+    max-width: 400px;
+    box-shadow: 0 6px 18px rgba(5,70,124,0.08);
+    background: var(--f9-chat-chat-background-color);
+}
+
+/* Header: use existing f9 variables */
+.rcw-conversation-container .rcw-header {
+    background-color: var(--f9-chat-title-background-color);
+    color: var(--f9-chat-title-color);
+    padding: 12px 16px !important;
+    border-radius: 14px 14px 0 0;
+    align-items: center;
+}
+
+/* Message animation (subtle) */
+.rcw-message {
+    animation: rcw-msg-in .22s ease-out both;
+}
+@keyframes rcw-msg-in {
+    from { transform: translateY(6px); opacity: 0; }
+    to   { transform: translateY(0);   opacity: 1; }
+}
+
+/* User bubble (client) — uses existing variables */
+.rcw-client .rcw-message-text {
+    background-color: var(--f9-chat-customer-bubble-color);
+    color: var(--f9-chat-customer-text-color);
+    padding: 12px 14px;
+    border-radius: 15px;
+    max-width: 78%;
+    word-break: break-word;
+}
+
+/* Agent bubble (response) — uses existing variables */
+.rcw-response .rcw-message-text {
+    background-color: var(--f9-chat-agent-bubble-color);
+    color: var(--f9-chat-agent-text-color);
+    padding: 12px 14px;
+    border-radius: 15px;
+    max-width: 78%;
+    word-break: break-word;
+}
+
+/* Avatars: keep circular shape and use existing avatar size var */
+.rcw-avatar, .avatar {
+    width: var(--f9-chat-avatar-width, var(--f9-chat-avatar-height));
+    height: var(--f9-chat-avatar-height);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Timestamps / meta */
+.rcw-timestamp, .rcw-agent-display-name {
+    font-size: 11px;
+    color: rgba(0,0,0,0.55);
+}
+
+/* Mini form: make inputs full-width but preserve inline 412px max used by server; keep inline positioning */
+.miniForm {
+    background: var(--f9-chat-mini-form-background-color);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    box-sizing: border-box;
+}
+.miniFormLabel { font-weight: 700; margin-bottom: 6px; display:block; }
+.miniFormInput, .miniFormInputArea {
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 412px; /* respects inline width used by server-rendered HTML */
+    transition: border-color 120ms ease;
+}
+.miniFormInput:focus, .miniFormInputArea:focus {
+    border-color: rgba(5,70,124,0.25);
+    outline: none;
+}
+.miniFormSubmit {
+    background: var(--f9-chat-button-background-color);
+    color: var(--f9-chat-button-text-color);
+    border: 0;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.miniFormSubmit:hover {
+    filter: brightness(0.95);
+}
+
+/* Ensure loader uses existing agent text color */
+.loader-dots {
+    background: var(--f9-chat-agent-text-color);
+}
+
+/* Responsive: on small screens allow full width while preserving inline positioning */
+@media screen and (max-width: 600px) {
+    .rcw-conversation-container { max-width: calc(100% - 16px); left: 8px !important; right: 8px !important; }
+    .miniFormInput, .miniFormInputArea { max-width: calc(100% - 20px); }
+}
+
