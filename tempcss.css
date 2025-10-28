@@ -958,21 +958,21 @@ li {
 }
 
 .miniFormInput {
-    font-family: var(--f9-chat-font-family-form-input), serif;
-    font-size: var(--f9-chat-font-size-form-input);
-    color: var(--f9-chat-mini-form-text-input-color);
-    background-color: var(--f9-chat-mini-form-text-input-background-color);
-    border-color: var(--f9-chat-mini-form-text-input-border-color);
     border-radius: 12px;
+    border: 1px solid var(--f9-chat-mini-form-text-input-border-color);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .miniFormInputArea {
-    font-family: var(--f9-chat-font-family-form-input), serif;
-    font-size: var(--f9-chat-font-size-form-input);
-    color: var(--f9-chat-mini-form-text-input-color);
-    background-color: var(--f9-chat-mini-form-text-input-background-color);
-    border-color: var(--f9-chat-mini-form-text-input-border-color);
     border-radius: 12px;
+    border: 1px solid var(--f9-chat-mini-form-text-input-border-color);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .miniFormSubmit {
