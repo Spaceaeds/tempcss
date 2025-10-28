@@ -936,60 +936,71 @@ li {
 .miniFormHolder {
     background: var(--f9-chat-mini-form-background-color);
     margin: 0 20px 85px 0;
-    border: 1px solid var(--f9-chat-title-background-color);
-    font-family: var(--f9-chat-font-family-form), serif
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 14px;
+    padding: 12px;
+    font-family: var(--f9-chat-font-family-form), serif;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
 .miniFormHeader {
     color: var(--f9-chat-title-color);
-    background: var(--f9-chat-title-background-color);
+    background: transparent;
     font-size: var(--f9-chat-font-size-title);
-    font-family: var(--f9-chat-font-family-title), serif
+    font-family: var(--f9-chat-font-family-title), serif;
+    padding: 6px 0 12px 0;
 }
 
 .miniForm {
     font-family: var(--f9-chat-font-family-form), serif;
     font-size: var(--f9-chat-font-size-form);
-    color: var(--f9-chat-mini-form-text-color)
+    color: var(--f9-chat-mini-form-text-color);
+    display: block;
 }
+
+.miniForm span { display: block; margin-bottom: 12px; }
 
 .miniFormLabel {
-    color: var(--f9-chat-mini-form-label-color)
+    color: var(--f9-chat-mini-form-label-color);
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
 }
 
-.miniFormInput {
-    border-radius: 12px;
-    border: 1px solid var(--f9-chat-mini-form-text-input-border-color);
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
+.miniFormInput,
 .miniFormInputArea {
-    border-radius: 12px;
+    border-radius: 10px;
     border: 1px solid var(--f9-chat-mini-form-text-input-border-color);
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 10px 12px;
+    background: var(--f9-chat-mini-form-text-input-background-color);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 412px; /* preserve server inline width behaviour */
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.miniFormInputArea { min-height: 96px; resize: vertical; }
+
+.miniFormInput:focus, .miniFormInputArea:focus {
+    border-color: var(--f9-chat-title-background-color);
+    box-shadow: 0 6px 18px rgba(5,70,124,0.12);
+    outline: none;
 }
 
 .miniFormSubmit {
-    border-radius: 12px;
-    margin-top: 5px;
-    color: var(--f9-chat-mini-form-submit-color);
-    background: var(--f9-chat-mini-form-submit-background-color);
+    border-radius: 10px;
+    margin-top: 6px;
+    color: var(--f9-chat-button-text-color);
+    background: var(--f9-chat-button-background-color);
     font-family: var(--f9-chat-font-family-form), serif;
-    font-size: var(--f9-chat-font-size-form)
+    font-size: var(--f9-chat-font-size-form);
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
 }
 .miniFormSubmit:hover {
-    border-radius: 12px;
-    margin-top: 5px;
-    color: var(--f9-chat-mini-form-submit-color);
-    background: var(--f9-chat-mini-form-submit-background-color);
-    font-family: var(--f9-chat-font-family-form), serif;
-    font-size: var(--f9-chat-font-size-form)
+    filter: brightness(0.95);
 }
 
 .nudge-wrapper {
@@ -1217,113 +1228,3 @@ li {
 .react-datepicker__year-read-view--down-arrow {
     display: none
 }
-
-/* ===== Additive chat UI styles (safe, non-destructive) ===== */
-/* These rules use the existing --f9-* variables and do not add or change any variable declarations. */
-
-/* Layout: limit conversation width and add a subtle panel shadow */
-.rcw-conversation-container {
-    max-width: 400px;
-    box-shadow: 0 6px 18px rgba(5,70,124,0.08);
-    background: var(--f9-chat-chat-background-color);
-}
-
-/* Header: use existing f9 variables */
-.rcw-conversation-container .rcw-header {
-    background-color: var(--f9-chat-title-background-color);
-    color: var(--f9-chat-title-color);
-    padding: 12px 16px !important;
-    border-radius: 14px 14px 0 0;
-    align-items: center;
-}
-
-/* Message animation (subtle) */
-.rcw-message {
-    animation: rcw-msg-in .22s ease-out both;
-}
-@keyframes rcw-msg-in {
-    from { transform: translateY(6px); opacity: 0; }
-    to   { transform: translateY(0);   opacity: 1; }
-}
-
-/* User bubble (client) — uses existing variables */
-.rcw-client .rcw-message-text {
-    background-color: var(--f9-chat-customer-bubble-color);
-    color: var(--f9-chat-customer-text-color);
-    padding: 12px 14px;
-    border-radius: 15px;
-    max-width: 78%;
-    word-break: break-word;
-}
-
-/* Agent bubble (response) — uses existing variables */
-.rcw-response .rcw-message-text {
-    background-color: var(--f9-chat-agent-bubble-color);
-    color: var(--f9-chat-agent-text-color);
-    padding: 12px 14px;
-    border-radius: 15px;
-    max-width: 78%;
-    word-break: break-word;
-}
-
-/* Avatars: keep circular shape and use existing avatar size var */
-.rcw-avatar, .avatar {
-    width: var(--f9-chat-avatar-width, var(--f9-chat-avatar-height));
-    height: var(--f9-chat-avatar-height);
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Timestamps / meta */
-.rcw-timestamp, .rcw-agent-display-name {
-    font-size: 11px;
-    color: rgba(0,0,0,0.55);
-}
-
-/* Mini form: make inputs full-width but preserve inline 412px max used by server; keep inline positioning */
-.miniForm {
-    background: var(--f9-chat-mini-form-background-color);
-    padding: 12px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    box-sizing: border-box;
-}
-.miniFormLabel { font-weight: 700; margin-bottom: 6px; display:block; }
-.miniFormInput, .miniFormInputArea {
-    background: #fff;
-    border: 1px solid #d8d8d8;
-    padding: 10px;
-    border-radius: 6px;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 412px; /* respects inline width used by server-rendered HTML */
-    transition: border-color 120ms ease;
-}
-.miniFormInput:focus, .miniFormInputArea:focus {
-    border-color: rgba(5,70,124,0.25);
-    outline: none;
-}
-.miniFormSubmit {
-    background: var(--f9-chat-button-background-color);
-    color: var(--f9-chat-button-text-color);
-    border: 0;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-.miniFormSubmit:hover {
-    filter: brightness(0.95);
-}
-
-/* Ensure loader uses existing agent text color */
-.loader-dots {
-    background: var(--f9-chat-agent-text-color);
-}
-
-/* Responsive: on small screens allow full width while preserving inline positioning */
-@media screen and (max-width: 600px) {
-    .rcw-conversation-container { max-width: calc(100% - 16px); left: 8px !important; right: 8px !important; }
-    .miniFormInput, .miniFormInputArea { max-width: calc(100% - 20px); }
-}
-
