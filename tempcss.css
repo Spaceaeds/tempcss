@@ -1224,7 +1224,14 @@ li {
     background: #f5f5f5;
     width: 100px;
     height: 25px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.end-cancel-button:hover {
+    background: var(--f9-chat-mini-form-submit-color);
+    color: var(--f9-chat-mini-form-submit-background-color);
 }
 
 .error-button-group {
