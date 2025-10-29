@@ -1182,13 +1182,20 @@ li {
     opacity: 1
 }
 
+#endConfirmationMessage {
+    background-color: transparent !important;
+}
+
 .end-confirmation-button-group {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
     padding-top: 10px;
     width: 100%;
-    align-content: center
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .end-confirmation-button {
@@ -1199,7 +1206,14 @@ li {
     background: #f5f5f5;
     width: 100px;
     height: 25px;
-    margin-bottom: 10px
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.end-confirmation-button:hover {
+    background: var(--f9-chat-mini-form-submit-color);
+    color: var(--f9-chat-mini-form-submit-background-color);
 }
 
 .end-cancel-button {
