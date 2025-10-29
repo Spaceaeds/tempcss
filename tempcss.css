@@ -968,7 +968,7 @@ li {
     z-index: 0;
 }
 
-.miniForm::after{
+.miniForm:has(.miniFormInput)::after{
     content: "";
     position: absolute;
     top: 25%;
@@ -1317,4 +1317,9 @@ li {
     border: solid 1px var(--f9-chat-template-button-hover-color);
     background: var(--f9-chat-mini-form-submit-color);
     color: var(--f9-chat-mini-form-background-color);
+}
+
+[id^="chatFormField"][id$="-error"] {
+    position: relative;
+    z-index: 1;
 }
