@@ -1115,11 +1115,13 @@ li {
 
 .barButton {
     border: none;
-    border-radius: 0;
+    border-radius: 50%;
     background-color: var(--f9-chat-title-background-color);
     color: var(--f9-chat-title-color);
     font-family: var(--f9-chat-font-family), serif;
-    font-size: 14px
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
 }
 
 .barButton:hover::before {
@@ -1210,7 +1212,7 @@ li {
 .end-confirmation-button {
     display: block;
     border: 1px solid #000;
-    border-radius: 5px;
+    border-radius: 9999px;
     color: #000;
     background: #f5f5f5;
     width: 100px;
@@ -1228,7 +1230,7 @@ li {
 .end-cancel-button {
     display: block;
     border: 1px solid #000;
-    border-radius: 5px;
+    border-radius: 9999px;
     color: #000;
     background: #f5f5f5;
     width: 100px;
