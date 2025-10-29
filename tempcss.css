@@ -238,16 +238,15 @@
     text-align: left !important;
     box-shadow: -2px 2px 10px 5px rgba(0, 0, 0, 0.1);
 }
-/* 
+
 .rcw-response .rcw-message-text {
     background-color: var(--f9-chat-agent-bubble-color);
     color: var(--f9-chat-agent-text-color);
     font-family: var(--f9-chat-font-family-chat), serif;
     border-radius: 15px 15px 15px 0;
-    padding: 15px;
+    padding: 0px !important;
     max-width: 100% !important;
-    text-align: left
-} */
+}
 
 .rcw-welcome {
     display: -ms-flexbox;
