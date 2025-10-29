@@ -48,7 +48,7 @@
     --f9-chat-font-size: "14px";
     --f9-chat-font-family-chat: "Averta-ExtraBold";
     --f9-chat-font-size-chat: "14px";
-    --f9-chat-font-family-form: "Poppins-regular" !important;
+    --f9-chat-font-family-form: "Averta-Regular";
     --f9-chat-font-size-form: "14px";
     --f9-chat-font-family-form-input: "Averta-Regular";
     --f9-chat-font-size-form-input: "14px";
@@ -70,20 +70,6 @@
     src: url("https://live-chat.ps.five9.com/asset/fonts/averta-regular-webfont.woff") format("woff")
 }
 
-@font-face {
-    font-family: Poppins-bold;
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Poppins-Bold.7219547e.ttf) format("ttf")
-}
-
-@font-face {
-    font-family: Poppins-regular;
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Poppins-Regular.707fdc5c.ttf) format("ttf")
-}
-
 .rcw-new-message::placeholder {
     color: #cbcbcb
 }
@@ -97,7 +83,8 @@
 
 .rcw-header {
     font-family: var(--f9-chat-font-family-title);
-    font-size: var(--f9-chat-font-size-title)
+    font-size: var(--f9-chat-font-size-title);
+    font-weight: 700;
 }
 
 .rcw-conversation-container .rcw-header {
@@ -985,11 +972,11 @@ li {
 .miniForm:has(.miniFormInput)::after{
     content: "";
     position: absolute;
-    top: 17%;
+    top: 19%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    height: 43%;
+    height: 46%;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
@@ -1015,7 +1002,6 @@ li {
 .miniFormLabel {
     color: var(--f9-chat-mini-form-label-color);
     margin-top: 10px;
-    font-family: var(--f9-chat-font-family-form);
 }
 
 .miniFormInput {
