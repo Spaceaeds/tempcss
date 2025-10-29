@@ -1015,6 +1015,7 @@ li {
 .miniFormLabel {
     color: var(--f9-chat-mini-form-label-color);
     margin-top: 10px;
+    font-family: var(--f9-chat-font-family-form);
 }
 
 .miniFormInput {
