@@ -970,7 +970,7 @@ li {
     z-index: 0;
 }
 
-.miniForm form{;
+.miniForm form{
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
@@ -995,6 +995,10 @@ li {
 .miniFormLabel {
     color: var(--f9-chat-mini-form-label-color);
     margin-top: 10px;
+}
+
+.miniFormLabel spam {
+    background-color: transparent !important;
 }
 
 .miniFormInput {
@@ -1322,4 +1326,6 @@ li {
 [id^="chatFormField"][id$="-error"] {
     position: relative;
     z-index: 1;
+    background-color: transparent !important;
 }
+
