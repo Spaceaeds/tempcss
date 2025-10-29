@@ -1133,7 +1133,7 @@ li {
 }
 
 .barButton:hover {
-    color: #ffee10;
+    color: #ffffff;
     background: var(--f9-chat-tray-button-hover-background-color);
     border-radius: 50%;
     box-shadow: 0 0 5px var(--f9-chat-tray-button-hover-border-color);
