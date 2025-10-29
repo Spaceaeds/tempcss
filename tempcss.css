@@ -1026,6 +1026,13 @@ li {
     padding-bottom: 5px;
     padding-left: 8px;
     padding-right: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.miniFormSubmit:hover {
+    background: var(--f9-chat-mini-form-submit-color);
+    color: var(--f9-chat-mini-form-submit-background-color);
 }
 
 .nudge-wrapper {
