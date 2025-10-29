@@ -963,7 +963,7 @@ li {
 .miniForm::after{
     content: "";
     position: absolute;
-    top: 23%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -991,7 +991,7 @@ li {
 
 .miniFormLabel {
     color: var(--f9-chat-mini-form-label-color);
-    margin-bottom: 6px;
+    margin-top: 10px;
 }
 
 .miniFormInput {
@@ -1001,7 +1001,6 @@ li {
     padding-right: 0.75rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin-bottom: 6px;
     width: 88% !important;
 }
 
