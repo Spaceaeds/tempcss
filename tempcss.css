@@ -970,18 +970,11 @@ li {
     z-index: 0;
 }
 
-.miniForm:has(.miniFormInput)::after{
-    content: "";
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 46%;
+.miniForm form{;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-    z-index: 0;
+    padding-bottom: 10px;
 }
 
 .miniForm * {
@@ -1011,7 +1004,7 @@ li {
     padding-right: 0.75rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    width: 88% !important;
+    width: 85% !important;
 }
 
 .miniFormInputArea {
