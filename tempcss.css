@@ -954,7 +954,8 @@ li {
 }
 
 .miniFormLabel {
-    color: var(--f9-chat-mini-form-label-color)
+    color: var(--f9-chat-mini-form-label-color);
+    margin-bottom: 6px;
 }
 
 .miniFormInput {
@@ -964,6 +965,8 @@ li {
     padding-right: 0.75rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    margin-bottom: 6px;
+    width: 88% !important;
 }
 
 .miniFormInputArea {
@@ -973,18 +976,12 @@ li {
     padding-right: 0.75rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    margin-bottom: 6px;
+    width: 88% !important;
 }
 
 .miniFormSubmit {
-    border-radius: 12px;
-    margin-top: 5px;
-    color: var(--f9-chat-mini-form-submit-color);
-    background: var(--f9-chat-mini-form-submit-background-color);
-    font-family: var(--f9-chat-font-family-form), serif;
-    font-size: var(--f9-chat-font-size-form)
-}
-.miniFormSubmit:hover {
-    border-radius: 12px;
+    border-radius: 5px;
     margin-top: 5px;
     color: var(--f9-chat-mini-form-submit-color);
     background: var(--f9-chat-mini-form-submit-background-color);
