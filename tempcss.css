@@ -74,14 +74,14 @@
     font-family: Poppins-bold;
     font-style: normal;
     font-weight: 700;
-    src: url(https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Poppins-Bold.7219547e.ttf)
+    src: url(https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Poppins-Bold.7219547e.ttf) format("ttf")
 }
 
 @font-face {
     font-family: Poppins-regular;
     font-style: normal;
     font-weight: 400;
-    src: url(https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Poppins-Regular.707fdc5c.ttf)
+    src: url(https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Poppins-Regular.707fdc5c.ttf) format("ttf")
 }
 
 .rcw-new-message::placeholder {
