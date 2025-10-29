@@ -1123,6 +1123,7 @@ li {
     font-size: 14px;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .barButton:hover::before {
