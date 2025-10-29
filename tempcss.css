@@ -947,10 +947,46 @@ li {
     font-family: var(--f9-chat-font-family-title), serif
 }
 
+.miniForm::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: var(--f9-chat-title-background-color);
+    border-bottom-left-radius: 100% 80px;
+    border-bottom-right-radius: 100% 80px;
+    z-index: 0;
+}
+
+.miniForm::after{
+    content: "";
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 58%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.miniForm * {
+  position: relative;
+  z-index: 1;
+}
+
 .miniForm {
     font-family: var(--f9-chat-font-family-form), serif;
     font-size: var(--f9-chat-font-size-form);
-    color: var(--f9-chat-mini-form-text-color)
+    color: var(--f9-chat-mini-form-text-color);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    position: relative;
 }
 
 .miniFormLabel {
@@ -981,12 +1017,16 @@ li {
 }
 
 .miniFormSubmit {
-    border-radius: 5px;
+    border-radius: 15px;
     margin-top: 5px;
     color: var(--f9-chat-mini-form-submit-color);
     background: var(--f9-chat-mini-form-submit-background-color);
     font-family: var(--f9-chat-font-family-form), serif;
-    font-size: var(--f9-chat-font-size-form)
+    font-size: var(--f9-chat-font-size-form);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .nudge-wrapper {
