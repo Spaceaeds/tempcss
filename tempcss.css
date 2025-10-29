@@ -62,12 +62,12 @@
 
 @font-face {
     font-family: Averta-ExtraBold;
-    src: url("./asset/fonts/averta-extrabold-webfont.woff") format("woff")
+    src: url("https://live-chat.ps.five9.com/asset/fonts/averta-extrabold-webfont.woff") format("woff")
 }
 
 @font-face {
     font-family: Averta-Regular;
-    src: url("./asset/fonts/averta-regular-webfont.woff") format("woff")
+    src: url("https://live-chat.ps.five9.com/asset/fonts/averta-regular-webfont.woff") format("woff")
 }
 
 .rcw-new-message::placeholder {
