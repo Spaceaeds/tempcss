@@ -953,7 +953,8 @@ li {
     color: var(--f9-chat-title-color);
     background: var(--f9-chat-title-background-color);
     font-size: var(--f9-chat-font-size-title);
-    font-family: var(--f9-chat-font-family-title), serif
+    font-family: var(--f9-chat-font-family-title), serif;
+    font-weight: 700;
 }
 
 .miniForm::before{
@@ -972,7 +973,7 @@ li {
 .miniForm:has(.miniFormInput)::after{
     content: "";
     position: absolute;
-    top: 19%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -994,7 +995,6 @@ li {
     color: var(--f9-chat-mini-form-text-color);
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 15px;
     position: relative;
     z-index: 0;
 }
