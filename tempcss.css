@@ -1021,6 +1021,7 @@ li {
     padding-right: 8px;
     cursor: pointer;
     transition: all 0.25s ease;
+    border: 1px solid var(--f9-chat-mini-form-submit-color);
 }
 
 .miniFormSubmit:hover {
