@@ -1306,15 +1306,16 @@ li {
 .template-button {
     border: solid 1px var(--f9-chat-template-button-color);
     display: inline-flex;
-    margin-top: 3px;
+    margin-top: 2px;
     text-align: center;
-    padding: 0.4rem 0.4rem;
-    border-radius: 9999px;
+    padding: 0.25rem 0.4rem;
+    border-radius: 1rem;
     cursor: pointer;
     white-space: normal;
     width: fit-content;
     flex: 0 0 auto;
-    font-weight: 600;
+    font-weight: 400;
+    margin-bottom: 2px;
 }
 
 .template-button:hover {
