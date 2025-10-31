@@ -1042,6 +1042,11 @@ li {
     color: var(--f9-chat-mini-form-submit-background-color);
 }
 
+.miniFormSubmit:active:hover {
+    animation: none;
+    transform: scale(.95);
+}
+
 .nudge-wrapper {
     background-color: #f5f5f5;
     border-radius: 10px;
