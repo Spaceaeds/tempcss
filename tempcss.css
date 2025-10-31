@@ -431,18 +431,11 @@
     background: var(--f9-chat-input-background-color);
     border: 0;
     border-radius: 50%;
-    transition: .5s;
-    transform: scale(.9)
-}
-
-.rcw-send:hover::before {
-    transform: scale(1.1);
-    border-radius: 50%;
-    box-shadow: 0 0 15px var(--f9-chat-tray-button-hover-border-color)
+    transition: .2s;
+    cursor: pointer;
 }
 
 .rcw-send:hover {
-    color: #ffee10;
     background: var(--f9-chat-tray-button-hover-background-color);
     border-radius: 50%;
     box-shadow: 0 0 5px var(--f9-chat-tray-button-hover-border-color);
@@ -1341,9 +1334,4 @@ li {
     position: relative;
     z-index: 1;
     background-color: transparent !important;
-}
-
-#five9OpenChatButton:active:hover {
-    animation: none;
-    transform: scale(.95);
 }
