@@ -1350,3 +1350,7 @@ li {
     background-color: transparent !important;
 }
 
+#five9OpenChatButton:active:hover {
+    animation: none;
+    transform: scale(.95);
+}
