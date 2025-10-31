@@ -1123,10 +1123,9 @@ li {
     cursor: pointer;
 }
 
-.barButton:hover::before {
-    transform: scale(1.1);
-    border-radius: 50%;
-    box-shadow: 0 0 15px var(--f9-chat-tray-button-hover-border-color)
+.barButton:active:hover {
+    animation: none;
+    transform: scale(.95);
 }
 
 .barButton:hover {
@@ -1211,7 +1210,7 @@ li {
 .end-confirmation-button {
     display: block;
     border: 1px solid #000;
-    border-radius: 9999px;
+    border-radius: 1rem;
     color: #000;
     background: #f5f5f5;
     width: 100px;
@@ -1219,6 +1218,11 @@ li {
     margin-right: 10px;
     cursor: pointer;
     transition: all 0.25s ease;
+}
+
+.end-confirmation-button:active:hover {
+    animation: none;
+    transform: scale(.95);
 }
 
 .end-confirmation-button:hover {
@@ -1229,7 +1233,7 @@ li {
 .end-cancel-button {
     display: block;
     border: 1px solid #000;
-    border-radius: 9999px;
+    border-radius: 1rem;
     color: #000;
     background: #f5f5f5;
     width: 100px;
@@ -1237,6 +1241,11 @@ li {
     margin-bottom: 10px;
     cursor: pointer;
     transition: all 0.25s ease;
+}
+
+.end-cancel-button:active:hover {
+    animation: none;
+    transform: scale(.95);
 }
 
 .end-cancel-button:hover {
@@ -1322,6 +1331,11 @@ li {
     border: solid 1px var(--f9-chat-template-button-hover-color);
     background: var(--f9-chat-mini-form-submit-color);
     color: var(--f9-chat-mini-form-background-color);
+}
+
+.template-button:active:hover {
+    animation: none;
+    transform: scale(.95)
 }
 
 [id^="chatFormField"][id$="-error"] {
