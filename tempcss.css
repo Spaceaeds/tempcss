@@ -1126,6 +1126,7 @@ li {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    transition: all 0.25s ease;
 }
 
 .barButton:active:hover {
