@@ -985,7 +985,6 @@ li {
 
 .miniFormLabel {
     color: var(--f9-chat-mini-form-label-color);
-    margin-top: 10px;
 }
 
 .miniFormLabel spam {
@@ -1011,6 +1010,10 @@ li {
     padding-bottom: 0.5rem;
     margin-bottom: 6px;
     width: 88% !important;
+}
+
+.miniFormSubmitHolder {
+    margin-top: -20px !important
 }
 
 .miniFormSubmit {
