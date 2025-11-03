@@ -1336,3 +1336,7 @@ li {
     z-index: 1;
     background-color: transparent !important;
 }
+
+.template-wrapper {
+    background-color: transparent !important;
+}
