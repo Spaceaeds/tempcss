@@ -168,7 +168,7 @@
 }
 
 .rcw-message {
-    margin: 10px 30px;
+    margin-left: 20px;
     display: -ms-flexbox;
     display: flex;
     word-wrap: break-word;
@@ -376,7 +376,7 @@
     max-height: 1000px;
     overflow-y: scroll;
     padding-top: 0;
-    border-bottom: 1px solid var(--f9-chat-title-background-color)
+    /* border-bottom: 1px solid var(--f9-chat-title-background-color) */
 }
 
 .rcw-full-screen .rcw-messages-container {
@@ -1347,4 +1347,26 @@ li {
 
 .template-wrapper {
     background-color: transparent !important;
+}
+
+.start-new-chat-button {
+    border-radius: 15px;
+    border: 1px solid var(--f9-chat-mini-form-submit-color);
+    color: var(--f9-chat-mini-form-submit-color);
+    background: var(--f9-chat-font-family-form);
+    font-family: var(--f9-chat-font-family-form);
+    padding: 5px 8px 5px 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: var(--f9-chat-font-size-form);
+}
+
+.start-new-chat-button:hover {
+    background: var(--f9-chat-mini-form-submit-color);
+    color: var(--f9-chat-mini-form-submit-background-color);
+}
+
+.start-new-chat-button:active:hover {
+    animation: none;
+    transform: scale(.95);
 }
