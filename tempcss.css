@@ -70,7 +70,7 @@
     src: url("https://live-chat.ps.five9.com/asset/fonts/averta-regular-webfont.woff") format("woff")
 }
 
-@font-face {
+/* @font-face {
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
@@ -140,7 +140,7 @@
     font-weight: 900;
     font-display: swap;
     src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Roboto-Black.59cc48c9.ttf")
-}
+} */
 
 .rcw-new-message::placeholder {
     color: #cbcbcb
