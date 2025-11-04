@@ -929,7 +929,7 @@ li {
 }
 
 .miniFormHolder {
-    background: var(--f9-chat-mini-form-background-color);
+    background: linear-gradient(180deg, #ffffff 0%, var(--f9-chat-mini-form-background-color) 100%);
     margin: 0 20px 85px 0;
     border: 1px solid var(--f9-chat-title-background-color);
     font-family: var(--f9-chat-font-family-form), serif
@@ -956,7 +956,7 @@ li {
 }
 
 .miniForm form{
-    background: white;
+    background: var(--f9-chat-agent-bubble-color);
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     padding-bottom: 10px;
@@ -1013,7 +1013,7 @@ li {
 }
 
 .miniFormSubmitHolder {
-    margin-top: -20px !important
+    margin-top: -25px !important
 }
 
 .miniFormSubmit {
@@ -1342,7 +1342,7 @@ li {
 [id^="chatFormField"][id$="-error"] {
     position: relative;
     z-index: 1;
-    background-color: transparent !important;
+    background-color: var(--f9-chat-agent-bubble-color) !important;
 }
 
 .template-wrapper {
