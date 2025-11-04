@@ -434,6 +434,7 @@
     border-radius: 50%;
     transition: .2s;
     cursor: pointer;
+    padding: 4px
 }
 
 .rcw-send:hover {
@@ -988,7 +989,7 @@ li {
     color: var(--f9-chat-mini-form-label-color);
 }
 
-.miniFormLabel spam {
+.miniFormLabel span {
     background-color: transparent !important;
 }
 
