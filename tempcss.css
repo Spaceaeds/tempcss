@@ -1057,6 +1057,10 @@ li {
     z-index: 0;
 }
 
+.miniForm span:empty {
+  display: none;
+}
+
 .miniFormLabel {
     color: var(--f9-chat-mini-form-label-color);
 }
