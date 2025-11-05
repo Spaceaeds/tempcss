@@ -1225,7 +1225,7 @@ li {
     border-radius: 1rem;
     color: var(--f9-chat-mini-form-submit-color);
     background: var(--f9-chat-mini-form-submit-background-color);
-    width: 100px;
+    width: auto;
     height: 25px;
     margin-right: 10px;
     cursor: pointer;
@@ -1248,7 +1248,7 @@ li {
     border-radius: 1rem;
     color: var(--f9-chat-mini-form-submit-color);
     background: var(--f9-chat-mini-form-submit-background-color);
-    width: 100px;
+    width: auto;
     height: 25px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -1283,7 +1283,7 @@ li {
     border-radius: 1rem;
     color: var(--f9-chat-mini-form-submit-color);
     background: var(--f9-chat-mini-form-submit-background-color);
-    width: 100px;
+    width: auto;
     height: 25px;
     margin-right: 10px;
     cursor: pointer;
@@ -1306,7 +1306,7 @@ li {
     border-radius: 1rem;
     color: var(--f9-chat-mini-form-submit-color);
     background: var(--f9-chat-mini-form-submit-background-color);
-    width: 100px;
+    width: auto;
     height: 25px;
     margin-right: 10px;
     cursor: pointer;
