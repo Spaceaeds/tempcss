@@ -1271,7 +1271,10 @@ li {
     flex-wrap: wrap;
     padding-top: 10px;
     width: 100%;
-    align-items: center
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .error-end-button {
