@@ -1203,6 +1203,10 @@ li {
     background-color: transparent !important;
 }
 
+#errorMessage {
+    background-color: transparent !important;
+}
+
 .end-confirmation-button-group {
     display: flex;
     flex-flow: column;
@@ -1273,23 +1277,47 @@ li {
 .error-end-button {
     display: block;
     border: 1px solid #000;
-    border-radius: 5px;
+    border-radius: 1rem;
     color: #000;
     background: #f5f5f5;
-    width: 130px;
+    width: 100px;
     height: 25px;
-    margin-bottom: 10px
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.error-end-button:active:hover {
+    animation: none;
+    transform: scale(.95);
+}
+
+.error-end-button:hover {
+    background: var(--f9-chat-mini-form-submit-color);
+    color: var(--f9-chat-mini-form-submit-background-color);
 }
 
 .error-retry-button {
     display: block;
     border: 1px solid #000;
-    border-radius: 5px;
+    border-radius: 1rem;
     color: #000;
     background: #f5f5f5;
-    width: 130px;
+    width: 100px;
     height: 25px;
-    margin-bottom: 10px
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.error-retry-button:active:hover {
+    animation: none;
+    transform: scale(.95);
+}
+
+.error-retry-button:hover {
+    background: var(--f9-chat-mini-form-submit-color);
+    color: var(--f9-chat-mini-form-submit-background-color);
 }
 
 .calendar-icon {
