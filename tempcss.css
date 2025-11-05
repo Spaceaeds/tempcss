@@ -70,78 +70,6 @@
     src: url("https://live-chat.ps.five9.com/asset/fonts/averta-regular-webfont.woff") format("woff")
 }
 
-/* @font-face {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Poppins-Regular.707fdc5c.ttf")
-}
-
-@font-face {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Poppins-Bold.7219547e.ttf")
-}
-
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Roboto-Light.4b2e824b.ttf")
-}
-
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Roboto-Regular.dbd285b5.ttf")
-}
-
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Roboto-Medium.616eee3f.ttf")
-}
-
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Roboto-SemiBold.57b40c38.ttf")
-}
-
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Roboto-Bold.deb990e2.ttf")
-}
-
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-    src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Roboto-ExtraBold.f00b24de.ttf")
-}
-
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url("https://cdn.prod.us.five9.net/stable/chat/ngchat-app/static/Roboto-Black.59cc48c9.ttf")
-} */
-
 .rcw-new-message::placeholder {
     color: #cbcbcb
 }
@@ -312,6 +240,11 @@
     border-radius: 15px 15px 15px 0;
     /* padding: 0px !important; */
     max-width: 100% !important;
+}
+
+.rcw-response .rcw-message-text>p {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
 }
 
 .rcw-welcome {
