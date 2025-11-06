@@ -1121,7 +1121,7 @@ li {
 .barButton {
     border: none;
     border-radius: 50%;
-    background-color: var(--f9-chat-title-background-color);
+    background-color: transparent !important;
     color: var(--f9-chat-title-color);
     font-family: var(--f9-chat-font-family), serif;
     font-size: 14px;
